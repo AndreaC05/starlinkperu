@@ -1,0 +1,55 @@
+.banner {
+  background-image: url("../assets/FOTOPORTADABANNER.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh; /* Ocupa toda la altura de la pantalla */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.rectangle {
+  background: linear-gradient(
+    270deg,
+    rgba(94, 94, 94, 0) 39%,
+    rgba(119, 119, 119, 0.05) 46%,
+    rgba(68, 68, 68, 0.07) 52%,
+    rgba(38, 38, 38, 0.21) 61%,
+    rgba(17, 17, 17, 0.42) 71%,
+    rgba(9, 9, 9, 0.56) 81%,
+    rgba(0, 0, 0, 0.63) 99%
+  );
+  box-shadow: inset 0px 0px 0px #0000004f;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vh;   /* alto visible: se adapta a la altura de la pantalla */
+  height: 100vw;  /* ancho visible: se adapta al ancho de la pantalla */
+  transform: rotate(-90deg) translateX(-100%);
+  transform-origin: top left;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.banner .tit_sub {
+    background-color: transparent;
+}
+
+.banner .tit_sub h1 {
+    background-color: transparent;
+    font-size: 80px;
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+
+.banner .tit_sub p {
+    background-color: transparent;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
