@@ -6,13 +6,14 @@ import "primeflex/primeflex.css";
 import "./App.css";
 
 //IMportaciones de Paginas
+import Inicio from "./pages/Inicio";
 import Home from "./pages/Home";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route exact path="/" element={<Home />} />
+        <Route exact path="/" element={<Inicio />} />
       </Routes>
     </BrowserRouter>
   );
