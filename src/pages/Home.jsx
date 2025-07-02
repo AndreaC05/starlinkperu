@@ -1,24 +1,108 @@
 import "../style/Home.css";
-import Logo from "../assets/LOGO STARLINK PERÚ.png";
+import Logo from "../assets/LOGOSTARLINKPERÚ.svg";
+import Rectangle from "../assets/rectangle.svg";
+import { Button } from "primereact/button";
+import { Link } from "react-router-dom";
+import SitioFijo from "../assets/SITIOFIJO.png";
+import Maritimo from "../assets/MARITIMO.png";
+import ImagenServices1 from "../assets/imagen_uno.png";
+import ImagenServices2 from "../assets/imagen_dos.png";
 
 export default function Home() {
-    return(
-        <>
-         <div className="container_principal_starlink">
-            <div className="banner">
-                <div className="rectangle"></div>
-                 <div className="logo">
-                    {/* <img src={Logo} alt="" /> */}
+  return (
+    <>
+      <div className="container_principal_starlink">
+        <div className="banner">
+          <div className="rectangle">
+            <img src={Rectangle} alt="" />
+          </div>
+          <div className="logo">
+            <img src={Logo} alt="" />
+          </div>
+          <div className="tit_sub">
+            <h1>STARLINK</h1>
+            <p>Conectando su empresa al mundo</p>
+          </div>
+        </div>
+        <section className="prioridad_tipo">
+          <div className="prioridad_local">
+            <h5>PRIORIDAD LOCAL</h5>
+            <p>Conectividad en todo el país</p>
+            <Button>Pedir Ahora</Button>
+          </div>
+          <div className="prioridad_mar">
+            <h5>PRIORIDAD MARÍTIMO</h5>
+            <p>Conectividad en el altamar</p>
+            <Button>Pedir Ahora</Button>
+          </div>
+        </section>
+        <section className="casos_uso">
+          <h3>Casos de Uso</h3>
+          <div className="casos_usos_tipo">
+            <div className="sitio_fijo">
+              <Link to="/">
+                <div className="caso_uso_sitio_fijo">
+                  <img src={SitioFijo} alt="" />
+                  <div className="text_casos_uso">
+                    <h4>SITIO FIJO</h4>
+                    <p>Conectividad para empresas</p>
+                  </div>
                 </div>
-                <div className="tit_sub">
-                    <h1>STARLINK</h1>
-                <p>Conectando su empresa al mundo</p>
-                </div>
+              </Link>
             </div>
-            <section className="prioridad_tipo">
-
-            </section>
-         </div>
-        </>
-    );
+            <div className="maritimo">
+              <Link to="/">
+                <div className="caso_uso_maritimo">
+                  <img src={Maritimo} alt="" />
+                  <div className="text_casos_uso">
+                    <h4>MARÍTIMO</h4>
+                    <p>Conectividad en el agua</p>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          </div>
+        </section>
+        <section className="servicios_starlink">
+          <h3>Conectividad sin límites con Starlink</h3>
+          <p>
+            Internet satelital de alta velocidad, en cualquier lugar del país
+          </p>
+          <div className="services">
+            <div className="conexion_internet">
+              <div className="text_servicios">
+                <h5>CONEXIÓN A INTERNET</h5>
+                <p>
+                  El kit Starlink viene con todo lo que necesita para conectarse
+                  en cuestión de minutos. Lo único que necesita es un cielo
+                  despejado.
+                </p>
+              </div>
+              <div className="img_servicio_1">
+                <img src={ImagenServices1} alt="" />
+              </div>
+            </div>
+            <div className="conectividad_satelital">
+              <div className="img_servicio_2">
+                <img src={ImagenServices2} alt="" />
+              </div>
+              <div className="text_servicios">
+                <h5>
+                  CONECTIVIDAD SATELITAL PARA OPERACIONES MARÍTIMAS SIN
+                  INTERRUPCIONES
+                </h5>
+                <p>
+                  Internet de alta velocidad y baja latencia en altamar con
+                  Starlink para empresas.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer>
+            <p>© Copyright 2025 Mikrotik Perú | All Rights Reserved</p>
+        </footer>
+      </div>
+    </>
+  );
 }

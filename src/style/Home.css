@@ -3,7 +3,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 90vh; /* Ocupa toda la altura de la pantalla */
+  height: 80vh; /* Ocupa toda la altura de la pantalla */
   width: 100%;
   display: flex;
   align-items: center;
@@ -12,44 +12,249 @@
   text-align: center;
   padding: 20px;
   box-sizing: border-box;
+  /* border: 1px solid white; */
 }
 
 .rectangle {
-  background: linear-gradient(
-    270deg,
-    rgba(94, 94, 94, 0) 39%,
-    rgba(119, 119, 119, 0.05) 46%,
-    rgba(68, 68, 68, 0.07) 52%,
-    rgba(38, 38, 38, 0.21) 61%,
-    rgba(17, 17, 17, 0.42) 71%,
-    rgba(9, 9, 9, 0.56) 81%,
-    rgba(0, 0, 0, 0.63) 99%
-  );
-  box-shadow: inset 0px 0px 0px #0000004f;
+  background-color: transparent;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vh;   /* alto visible: se adapta a la altura de la pantalla */
-  height: 100vw;  /* ancho visible: se adapta al ancho de la pantalla */
-  transform: rotate(-90deg) translateX(-100%);
-  transform-origin: top left;
-  z-index: 1;
-  pointer-events: none;
+}
+
+.rectangle img {
+  background-color: transparent;
+  width: 100%;
 }
 
 .banner .tit_sub {
-    background-color: transparent;
+  background-color: transparent;
+  position: absolute;
+  z-index: 2;
 }
 
 .banner .tit_sub h1 {
-    background-color: transparent;
-    font-size: 80px;
-    font-weight: 500;
-    letter-spacing: 5px;
+  background-color: transparent;
+  font-size: 80px;
+  font-weight: 500;
+  letter-spacing: 5px;
 }
 
 .banner .tit_sub p {
-    background-color: transparent;
-    font-size: 40px;
-    letter-spacing: 2px;
+  background-color: transparent;
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+
+.logo {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.logo img {
+  background-color: transparent;
+  width: 317px;
+}
+
+/* PRIORIDADES */
+
+.prioridad_tipo {
+  position: absolute;
+  top: 630px;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* border: 1px solid white; */
+  width: 100%;
+}
+
+.prioridad_local,
+.prioridad_mar {
+  background-color: #42424242;
+  border: 1px solid;
+  border-color: #ffffffcc;
+  border-radius: 30px;
+  opacity: 0.8;
+  width: 568px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 49px 40px;
+}
+
+.prioridad_local h5,
+.prioridad_local p,
+.prioridad_mar h5,
+.prioridad_mar p {
+  background-color: transparent;
+  color: white;
+}
+
+.prioridad_local h5,
+.prioridad_mar h5 {
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.prioridad_local p,
+.prioridad_mar p {
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 7px;
+}
+
+.prioridad_local button,
+.prioridad_mar button {
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+  width: 97px;
+  padding: 10px;
+  border: none;
+  margin-top: 7px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@keyframes gentleFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.prioridad_local,
+.prioridad_mar {
+  animation: gentleFloat 3s ease-in-out infinite;
+}
+
+/* CASOS DE USOS */
+
+.casos_uso {
+  margin-top: 180px;
+  padding: 0px 200px;
+}
+
+.casos_uso h3 {
+  color: white;
+  font-size: 32px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.casos_usos_tipo {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.caso_uso_sitio_fijo,
+.caso_uso_maritimo {
+  position: relative;
+  overflow: hidden;
+}
+
+.caso_uso_sitio_fijo img,
+.caso_uso_maritimo img {
+  transition: transform 0.5s ease;
+}
+
+.caso_uso_sitio_fijo:hover img,
+.caso_uso_maritimo:hover img {
+  transform: scale(1.3);
+}
+
+.text_casos_uso {
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  background-color: transparent;
+}
+
+.text_casos_uso h4 {
+  background-color: transparent;
+  font-size: 40px;
+  color: white;
+}
+
+.text_casos_uso p {
+  font-size: 24px;
+  color: white;
+  font-weight: 400;
+  background-color: transparent;
+  margin-top: 5px;
+}
+
+/* SERVICIOS  */
+
+.servicios_starlink {
+  margin-top: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.servicios_starlink h3 {
+  font-size: 36px;
+  color: white;
+}
+
+.servicios_starlink p {
+  color: white;
+  margin-top: 10px;
+  font-size: 26px;
+  letter-spacing: 2px;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+}
+
+.conexion_internet,
+.conectividad_satelital {
+  display: flex;
+  align-items: center;
+  padding: 30px 220px;
+}
+
+.text_servicios:nth-child(1) {
+  margin-right: 20px;
+}
+
+.text_servicios:nth-child(2) {
+  margin-left: 20px;
+}
+
+.text_servicios h5 {
+  color: white;
+  font-size: 28px;
+  letter-spacing: 2px;
+}
+
+.text_servicios p {
+  font-size: 22px;
+  letter-spacing: 2px;
+  line-height: 30px;
+}
+
+/* FOOTER */
+
+footer {
+  margin-top: 25px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+footer p {
+  color: white;
+  font-size: 18px;
 }
