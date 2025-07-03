@@ -3,8 +3,8 @@ import Logo from "../assets/LOGOSTARLINKPERÚ.svg";
 import Rectangle from "../assets/rectangle.svg";
 import { Button } from "primereact/button";
 import { Link } from "react-router-dom";
-import SitioFijo from "../assets/SITIOFIJO.png";
-import Maritimo from "../assets/MARITIMO.png";
+import SitioFijo from "../assets/SITIOFIJO.jpg";
+import Maritimo from "../assets/MARITIMO.jpg";
 import ImagenServices1 from "../assets/imagen_uno.png";
 import ImagenServices2 from "../assets/imagen_dos.png";
 
@@ -28,12 +28,24 @@ export default function Home() {
           <div className="prioridad_local">
             <h5>PRIORIDAD LOCAL</h5>
             <p>Conectividad en todo el país</p>
-            <Button>Pedir Ahora</Button>
+            <a
+              href="https://wa.me/51999046598"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button>Pedir Ahora</Button>
+            </a>
           </div>
           <div className="prioridad_mar">
             <h5>PRIORIDAD MARÍTIMO</h5>
             <p>Conectividad en el altamar</p>
-            <Button>Pedir Ahora</Button>
+            <a
+              href="https://wa.me/51999046598"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button>Pedir Ahora</Button>
+            </a>
           </div>
         </section>
         <section className="casos_uso">
@@ -100,7 +112,7 @@ export default function Home() {
           </div>
         </section>
         <footer>
-            <p>© Copyright 2025 Mikrotik Perú | All Rights Reserved</p>
+          <p>© Copyright 2025 Mikrotik Perú | All Rights Reserved</p>
         </footer>
       </div>
     </>

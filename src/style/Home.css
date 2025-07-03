@@ -110,6 +110,11 @@
   margin-top: 7px;
 }
 
+.prioridad_local a,
+.prioridad_mar a {
+  background-color: transparent;
+}
+
 .prioridad_local button,
 .prioridad_mar button {
   background-color: white;
