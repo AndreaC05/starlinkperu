@@ -1,5 +1,6 @@
 import "../style/Inicio.css";
 import Home from "./Home";
+import RedesSociales from "../components/RedesSociales";
 import FondoPuntos from "../assets/Fondo/fondoPuntos.svg";
 
 export default function Inicio() {
@@ -116,12 +117,13 @@ export default function Inicio() {
             </g>
           </svg>
         </div>
+        <div className="redes_sociales">
+            <RedesSociales />
+        </div>
         <div className="home">
             <Home />
         </div>
-        <div className="fondo_lineas">
-            <img src={FondoPuntos} alt="" />
-        </div>
+        
 
       </div>
     </>

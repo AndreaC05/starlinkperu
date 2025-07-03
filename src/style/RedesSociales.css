@@ -1,0 +1,76 @@
+.container_redes_sociales {
+    display: flex;
+    justify-content: end;
+}
+
+@keyframes RedSocialFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.redes {
+  position: fixed;
+  top: 30%;
+  right: 0;
+  margin-right: 15px;
+  transform: translateY(-50%);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: rgba(0, 0, 0, 0.514);
+  padding: 8px 4px;
+  border-radius: 10px 0 0 10px;
+  box-shadow: -2px 2px 10px rgba(255, 255, 255, 0.3);
+  animation: RedSocialFloat 3s ease-in-out infinite;
+}
+
+.social_icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: fit-content; /* Ajuste automático al contenido */
+  max-width: 45px;     /* Solo muestra el ícono inicialmente */
+  overflow: hidden;
+  transition: max-width 0.3s ease;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.social_icon:hover {
+  max-width: 300px; /* Se expande hasta donde lo necesite el tooltip */
+}
+
+.social_icon img {
+  width: 45px;
+  height: 45px;
+  transition: transform 0.3s ease;
+  background-color: transparent;
+}
+
+.social_icon:hover img {
+  transform: scale(1.1);
+}
+
+.tooltip {
+  opacity: 0;
+  background-color: transparent;
+  color: white;
+  font-size: 15px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+  margin-left: 10px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  flex-shrink: 0;  /* Para que el texto no se corte */
+}
+
+.social_icon:hover .tooltip {
+  opacity: 1;
+  /* transform: translateX(0); */
+}
