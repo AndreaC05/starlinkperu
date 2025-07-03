@@ -1,14 +1,37 @@
+import { useState } from "react";
 import "../style/Home.css";
 import Logo from "../assets/LOGOSTARLINKPERÚ.svg";
 import Rectangle from "../assets/rectangle.svg";
 import { Button } from "primereact/button";
-import { Link } from "react-router-dom";
+import GaleriaImages from "../components/SITIOFIJOGALERIA/GaleriaImages";
+import GaleriaImages2 from "../components/MARITIMOGALERIA/GaleriaImages";
 import SitioFijo from "../assets/SITIOFIJO.jpg";
 import Maritimo from "../assets/MARITIMO.jpg";
-import ImagenServices1 from "../assets/imagen_uno.png";
-import ImagenServices2 from "../assets/imagen_dos.png";
+import ImagenServices1 from "../assets/imagen_dos.jpg";
+import ImagenServices2 from "../assets/imagen_uno.jpg";
 
 export default function Home() {
+  const [showGallery, setShowGallery] = useState(false);
+  const [showGallery2, setShowGallery2] = useState(false);
+
+  const handleShowGallery = () => {
+    setShowGallery(true);
+  };
+
+  // Función para cerrar la galería
+  const handleCloseGallery = () => {
+    setShowGallery(false);
+  };
+
+  const handleShowGallery2 = () => {
+    setShowGallery2(true);
+  };
+
+  // Función para cerrar la galería
+  const handleCloseGallery2 = () => {
+    setShowGallery2(false);
+  };
+
   return (
     <>
       <div className="container_principal_starlink">
@@ -52,26 +75,26 @@ export default function Home() {
           <h3>Casos de Uso</h3>
           <div className="casos_usos_tipo">
             <div className="sitio_fijo">
-              <Link to="/">
-                <div className="caso_uso_sitio_fijo">
+              <div className="caso_uso_sitio_fijo">
+                <Button onClick={handleShowGallery}>
                   <img src={SitioFijo} alt="" />
                   <div className="text_casos_uso">
                     <h4>SITIO FIJO</h4>
                     <p>Conectividad para empresas</p>
                   </div>
-                </div>
-              </Link>
+                </Button>
+              </div>
             </div>
             <div className="maritimo">
-              <Link to="/">
-                <div className="caso_uso_maritimo">
+              <div className="caso_uso_maritimo">
+                <Button onClick={handleShowGallery2}>
                   <img src={Maritimo} alt="" />
                   <div className="text_casos_uso">
                     <h4>MARÍTIMO</h4>
                     <p>Conectividad en el agua</p>
                   </div>
-                </div>
-              </Link>
+                </Button>
+              </div>
             </div>
           </div>
         </section>
@@ -114,6 +137,9 @@ export default function Home() {
         <footer>
           <p>© Copyright 2025 Mikrotik Perú | All Rights Reserved</p>
         </footer>
+
+        {showGallery && <GaleriaImages onClose={handleCloseGallery} />}
+        {showGallery2 && <GaleriaImages2 onClose={handleCloseGallery2} />}
       </div>
     </>
   );

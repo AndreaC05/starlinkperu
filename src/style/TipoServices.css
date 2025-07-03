@@ -1,0 +1,24 @@
+.container_fixed_sitio .tit_sub, 
+.container_maritime .tit_sub {
+    margin-top: 450px;
+    /* border: 1px solid black; */
+}
+
+.container_fixed_sitio .tit_sub h1,
+.container_maritime .tit_sub h1 {
+    margin-bottom: 30px;
+}
+
+.container_fixed_sitio .tit_sub a,
+.container_maritime .tit_sub a {
+    background-color: transparent;
+}
+
+.container_fixed_sitio .tit_sub Button, 
+.container_maritime .tit_sub Button {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 8px 10px;
+    font-size: 20px;
+}

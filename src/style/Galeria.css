@@ -1,0 +1,22 @@
+.card {
+  background: var(--surface-card);
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.p-galleria-content {
+    width: 500px;
+}
+
+.p-galleria-item-prev, 
+.p-galleria-item-next, 
+.p-galleria-close {
+    background-color: transparent;
+}
+
+.p-galleria-item-next svg, 
+.p-galleria-item-prev svg, 
+.p-galleria-close svg {
+    background-color: transparent;
+}

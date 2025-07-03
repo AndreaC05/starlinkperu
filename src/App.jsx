@@ -8,12 +8,16 @@ import "./App.css";
 //IMportaciones de Paginas
 import Inicio from "./pages/Inicio";
 import Home from "./pages/Home";
+import FixedSite from "./pages/FixedSite";
+import Maritime from "./pages/Maritime";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route exact path="/" element={<Inicio />} />
+        <Route exact path="/fixed-site" element={<FixedSite />} />
+        <Route exact path="/maritime" element={<Maritime />} />
       </Routes>
     </BrowserRouter>
   );

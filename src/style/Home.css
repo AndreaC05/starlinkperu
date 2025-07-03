@@ -166,6 +166,12 @@
   background-color: transparent;
 }
 
+.caso_uso_sitio_fijo Button, 
+.caso_uso_maritimo Button {
+  background-color: transparent;
+  border: none;
+}
+
 .caso_uso_sitio_fijo,
 .caso_uso_maritimo {
   position: relative;
