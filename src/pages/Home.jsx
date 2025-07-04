@@ -40,17 +40,28 @@ export default function Home() {
             <img src={Rectangle} alt="" />
           </div>
           <div className="logo">
-            <img src={Logo} alt="" />
+            {/* <img src={Logo} alt="" /> */}
           </div>
           <div className="tit_sub">
-            <h1>STARLINK</h1>
-            <p>Conectando su empresa al mundo</p>
+            <h1>STARLINK EMPRESAS</h1>
+            <p>Conectando al mundo</p>
           </div>
         </div>
         <section className="prioridad_tipo">
           <div className="prioridad_local">
             <h5>PRIORIDAD LOCAL</h5>
             <p>Conectividad en todo el país</p>
+            <a
+              href="https://wa.me/51999046598"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button>Pedir Ahora</Button>
+            </a>
+          </div>
+          <div className="prioridad_movil">
+            <h5>PRIORIDAD MÓVIL</h5>
+            <p>Conectividad en todo su camino</p>
             <a
               href="https://wa.me/51999046598"
               target="_blank"
