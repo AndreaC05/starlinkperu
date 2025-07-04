@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "../style/Home.css";
+import "../style/Responsive/HomeResponsive.css";
 import Logo from "../assets/LOGOSTARLINKPERÚ.svg";
 import Rectangle from "../assets/rectangle.svg";
 import { Button } from "primereact/button";
@@ -36,12 +37,6 @@ export default function Home() {
     <>
       <div className="container_principal_starlink">
         <div className="banner">
-          <div className="rectangle">
-            <img src={Rectangle} alt="" />
-          </div>
-          <div className="logo">
-            {/* <img src={Logo} alt="" /> */}
-          </div>
           <div className="tit_sub">
             <h1>STARLINK EMPRESAS</h1>
             <p>Conectando al mundo</p>

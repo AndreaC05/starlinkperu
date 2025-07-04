@@ -1,6 +1,7 @@
 import "../style/RedesSociales.css";
+import "../style/Responsive/RedesSocialesResponsive.css";
 import Whatsapp from "../assets/Icons/whatsapp.svg";
-import Gmail from "../assets/Icons/gmail.svg";
+import Gmail from "../assets/Icons/email.svg";
 import Phone from "../assets/Icons/phone.svg";
 
 export default function RedesSociales() {

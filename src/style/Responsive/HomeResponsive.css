@@ -1,1 +1,206 @@
-@media (min-width: )
+/* Media Query para pantallas de 1920px en adelante */
+@media (min-width: 1921px) {
+  
+  /* BANNER - Ajustes para pantallas grandes */
+  .banner .tit_sub h1 {
+    font-size: 100px; /* Aumentamos el tamaño del título principal */
+    letter-spacing: 8px;
+  }
+
+  .banner .tit_sub p {
+    font-size: 50px; /* Aumentamos el subtítulo */
+    letter-spacing: 3px;
+  }
+
+  /* PRIORIDADES - Mantienen posición y se adaptan al tamaño */
+  .prioridad_tipo {
+    top: 600px; /* Ajustamos la posición para pantallas más grandes */
+    max-width: 1800px; /* Limitamos el ancho máximo */
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .prioridad_local,
+  .prioridad_mar, 
+  .prioridad_movil {
+    width: 520px; /* Aumentamos el ancho de las cajas */
+    height: 200px; /* Aumentamos la altura */
+    padding: 55px 45px; /* Aumentamos el padding */
+    /* Mantienen todas las propiedades originales incluyendo animación */
+  }
+
+  .prioridad_local h5,
+  .prioridad_mar h5,
+  .prioridad_movil h5 {
+    font-size: 32px; /* Aumentamos el tamaño de los títulos */
+    letter-spacing: 1.5px;
+  }
+
+  .prioridad_local p,
+  .prioridad_mar p,
+  .prioridad_movil p {
+    font-size: 24px; /* Aumentamos el tamaño del texto */
+    margin-top: 10px;
+  }
+
+  .prioridad_local button,
+  .prioridad_mar button,
+  .prioridad_movil button {
+    width: 110px; /* Aumentamos el tamaño del botón */
+    padding: 12px;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  /* CASOS DE USO - Ajustes para pantallas grandes */
+  .casos_uso {
+    margin-top: 220px; /* Aumentamos el margen superior */
+    padding: 0px 300px; /* Aumentamos el padding lateral */
+  }
+
+  .casos_uso h3 {
+    font-size: 40px; /* Aumentamos el título */
+  }
+
+  .text_casos_uso h4 {
+    font-size: 48px; /* Aumentamos el título de casos de uso */
+  }
+
+  .text_casos_uso p {
+    font-size: 28px; /* Aumentamos el subtítulo */
+  }
+
+  /* SERVICIOS - Ajustes para pantallas grandes */
+  .servicios_starlink {
+    margin-top: 180px;
+  }
+
+  .servicios_starlink h3 {
+    font-size: 44px; /* Aumentamos el título principal */
+  }
+
+  .servicios_starlink p {
+    font-size: 32px; /* Aumentamos el subtítulo */
+    letter-spacing: 3px;
+  }
+
+  .conexion_internet,
+  .conectividad_satelital {
+    padding: 40px 300px; /* Aumentamos el padding */
+  }
+
+  .text_servicios h5 {
+    font-size: 34px; /* Aumentamos los títulos de servicios */
+    letter-spacing: 2.5px;
+  }
+
+  .text_servicios p {
+    font-size: 26px; /* Aumentamos el texto descriptivo */
+    letter-spacing: 2.5px;
+    line-height: 36px;
+  }
+
+  /* FOOTER - Ajustes para pantallas grandes */
+  footer p {
+    font-size: 22px; /* Aumentamos el texto del footer */
+  }
+}
+
+@media (max-width: 1440px) {
+  /* BANNER - Ajustes para pantallas grandes */
+  .banner .tit_sub h1 {
+    font-size: 60px; /* Aumentamos el tamaño del título principal */
+    letter-spacing: 8px;
+  }
+
+  .banner .tit_sub p {
+    font-size: 30px; /* Aumentamos el subtítulo */
+    letter-spacing: 3px;
+  }
+
+  /* PRIORIDADES - Mantienen posición y se adaptan al tamaño */
+  .prioridad_tipo {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+    gap: 20px;
+    top: 400px;
+    max-width: 1800px;
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* Cada elemento ocupa el 48% del ancho (permite 2 por fila) */
+  .prioridad_tipo > * {
+    flex: 0 0 calc(40% - 15px);
+  }
+  
+  /* El tercer elemento ocupa toda la fila */
+  .prioridad_tipo > *:nth-child(3) {
+    flex: 0 0 40%;
+  }
+
+  .casos_uso {
+    margin-top: 400px;
+    padding: 0px 100px;
+  }
+
+  .text_casos_uso h4 {
+    font-size: 36px; /* Aumentamos el título de casos de uso */
+  }
+
+  .text_casos_uso p {
+    font-size: 20px; /* Aumentamos el subtítulo */
+  }
+
+  .caso_uso_sitio_fijo img, 
+  .caso_uso_maritimo img {
+    width: 560px;
+  }
+
+  .img_servicio_1 img, 
+  .img_servicio_2 img {
+    width: 500px;
+  }
+
+  .text_servicios h5 {
+    font-size: 26px;
+  }
+
+  .text_servicios p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .caso_uso_sitio_fijo img, 
+  .caso_uso_maritimo img {
+    width: 400px;
+  }
+
+  .text_casos_uso {
+    left: 20px;
+  }
+
+  .text_casos_uso h4 {
+    font-size: 28px; /* Aumentamos el título de casos de uso */
+  }
+
+  .text_casos_uso p {
+    font-size: 18px; /* Aumentamos el subtítulo */
+  } 
+  
+  .img_servicio_1 img, 
+  .img_servicio_2 img {
+    width: 400px;
+  }
+
+  .text_servicios h5 {
+    font-size: 22px;
+  }
+
+  .text_servicios p {
+    font-size: 16px;
+  }
+}

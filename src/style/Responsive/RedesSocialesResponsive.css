@@ -1,0 +1,11 @@
+@media (min-width: 1921px) {
+  .redes {
+    margin-right: 2px;
+  }
+}
+
+@media (max-width: 1440px) {
+    .redes {
+        margin-right: 1px;
+    }
+}

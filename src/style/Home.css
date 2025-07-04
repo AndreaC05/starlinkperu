@@ -3,7 +3,7 @@
 }
 
 .banner {
-  background-image: url("../assets/FOTOPORTADABANNER.jpg");
+  background-image: url("../assets/Banner.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -17,16 +17,6 @@
   padding: 20px;
   box-sizing: border-box;
   /* border: 1px solid white; */
-}
-
-.rectangle {
-  background-color: transparent;
-  position: absolute;
-}
-
-.rectangle img {
-  background-color: transparent;
-  width: 100%;
 }
 
 .banner .tit_sub {
@@ -46,18 +36,6 @@
   background-color: transparent;
   font-size: 40px;
   letter-spacing: 2px;
-}
-
-.logo {
-  background-color: transparent;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.logo img {
-  background-color: transparent;
-  width: 317px;
 }
 
 /* PRIORIDADES */
@@ -208,6 +186,7 @@
   background-color: transparent;
   font-size: 40px;
   color: white;
+  text-align: left;
 }
 
 .text_casos_uso p {
