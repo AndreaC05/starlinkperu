@@ -133,7 +133,7 @@
 
 .casos_uso {
   margin-top: 180px;
-  padding: 0px 200px;
+  padding: 0px 100px;
   background-color: transparent;
 }
 
@@ -159,38 +159,41 @@
 }
 
 .caso_uso_sitio_fijo,
-.caso_uso_maritimo {
+.caso_uso_maritimo,
+.caso_uso_terrestre {
   position: relative;
   overflow: hidden;
   background-color: transparent;
 }
 
 .caso_uso_sitio_fijo img,
-.caso_uso_maritimo img {
+.caso_uso_maritimo img,
+.caso_uso_terrestre img {
   transition: transform 0.5s ease;
 }
 
 .caso_uso_sitio_fijo:hover img,
-.caso_uso_maritimo:hover img {
+.caso_uso_maritimo:hover img,
+.caso_uso_terrestre:hover img {
   transform: scale(1.3);
 }
 
 .text_casos_uso {
   position: absolute;
   top: 30px;
-  left: 50px;
+  left: 30px;
   background-color: transparent;
 }
 
 .text_casos_uso h4 {
   background-color: transparent;
-  font-size: 40px;
+  font-size: 34px;
   color: white;
   text-align: left;
 }
 
 .text_casos_uso p {
-  font-size: 24px;
+  font-size: 22px;
   color: white;
   font-weight: 400;
   background-color: transparent;
@@ -233,8 +236,13 @@
 .conectividad_satelital {
   display: flex;
   align-items: center;
-  padding: 30px 220px;
+  margin: 0px 130px;
+  /* padding: 30px 220px; */
   background-color: transparent;
+}
+
+.conectividad_satelital {
+  margin-top: 30px;
 }
 
 .text_servicios:nth-child(1) {

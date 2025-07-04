@@ -8,6 +8,7 @@ import GaleriaImages from "../components/SITIOFIJOGALERIA/GaleriaImages";
 import GaleriaImages2 from "../components/MARITIMOGALERIA/GaleriaImages";
 import SitioFijo from "../assets/SITIOFIJO.jpg";
 import Maritimo from "../assets/MARITIMO.jpg";
+import Terrestre from "../assets/TERRESTRE.jpg";
 import ImagenServices1 from "../assets/imagen_dos.jpg";
 import ImagenServices2 from "../assets/imagen_uno.jpg";
 
@@ -100,6 +101,15 @@ export default function Home() {
                     <p>Conectividad en el agua</p>
                   </div>
                 </Button>
+              </div>
+            </div>
+            <div className="terrestre">
+              <div className="caso_uso_terrestre">
+                <img src={Terrestre} alt="" />
+                <div className="text_casos_uso">
+                  <h4>TERRESTRE</h4>
+                  <p>Conectividad terrestre en movimiento</p>
+                </div>
               </div>
             </div>
           </div>

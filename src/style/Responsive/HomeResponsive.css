@@ -1,6 +1,5 @@
 /* Media Query para pantallas de 1920px en adelante */
 @media (min-width: 1921px) {
-  
   /* BANNER - Ajustes para pantallas grandes */
   .banner .tit_sub h1 {
     font-size: 100px; /* Aumentamos el tamaño del título principal */
@@ -22,7 +21,7 @@
   }
 
   .prioridad_local,
-  .prioridad_mar, 
+  .prioridad_mar,
   .prioridad_movil {
     width: 520px; /* Aumentamos el ancho de las cajas */
     height: 200px; /* Aumentamos la altura */
@@ -56,7 +55,13 @@
   /* CASOS DE USO - Ajustes para pantallas grandes */
   .casos_uso {
     margin-top: 220px; /* Aumentamos el margen superior */
-    padding: 0px 300px; /* Aumentamos el padding lateral */
+    padding: 0px 110px; /* Aumentamos el padding lateral */
+  }
+
+  .caso_uso_sitio_fijo img,
+  .caso_uso_maritimo img,
+  .caso_uso_terrestre img {
+    width: 730px;
   }
 
   .casos_uso h3 {
@@ -85,11 +90,6 @@
     letter-spacing: 3px;
   }
 
-  .conexion_internet,
-  .conectividad_satelital {
-    padding: 40px 300px; /* Aumentamos el padding */
-  }
-
   .text_servicios h5 {
     font-size: 34px; /* Aumentamos los títulos de servicios */
     letter-spacing: 2.5px;
@@ -99,6 +99,10 @@
     font-size: 26px; /* Aumentamos el texto descriptivo */
     letter-spacing: 2.5px;
     line-height: 36px;
+  }
+
+  .conectividad_satelital {
+    margin-top: 30px;
   }
 
   /* FOOTER - Ajustes para pantallas grandes */
@@ -130,12 +134,12 @@
     left: 50%;
     transform: translateX(-50%);
   }
-  
+
   /* Cada elemento ocupa el 48% del ancho (permite 2 por fila) */
   .prioridad_tipo > * {
     flex: 0 0 calc(40% - 15px);
   }
-  
+
   /* El tercer elemento ocupa toda la fila */
   .prioridad_tipo > *:nth-child(3) {
     flex: 0 0 40%;
@@ -143,23 +147,24 @@
 
   .casos_uso {
     margin-top: 400px;
-    padding: 0px 100px;
+    padding: 0px 70px;
   }
 
   .text_casos_uso h4 {
-    font-size: 36px; /* Aumentamos el título de casos de uso */
+    font-size: 34px; /* Aumentamos el título de casos de uso */
   }
 
   .text_casos_uso p {
-    font-size: 20px; /* Aumentamos el subtítulo */
+    font-size: 18px; /* Aumentamos el subtítulo */
   }
 
-  .caso_uso_sitio_fijo img, 
-  .caso_uso_maritimo img {
-    width: 560px;
+  .caso_uso_sitio_fijo img,
+  .caso_uso_maritimo img,
+  .caso_uso_terrestre img {
+    width: 420px;
   }
 
-  .img_servicio_1 img, 
+  .img_servicio_1 img,
   .img_servicio_2 img {
     width: 500px;
   }
@@ -174,9 +179,16 @@
 }
 
 @media (max-width: 1024px) {
-  .caso_uso_sitio_fijo img, 
-  .caso_uso_maritimo img {
-    width: 400px;
+  .casos_usos_tipo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .caso_uso_sitio_fijo img,
+  .caso_uso_maritimo img,
+  .caso_uso_terrestre img {
+    width: 420px;
   }
 
   .text_casos_uso {
@@ -189,9 +201,13 @@
 
   .text_casos_uso p {
     font-size: 18px; /* Aumentamos el subtítulo */
-  } 
-  
-  .img_servicio_1 img, 
+  }
+
+  .servicios_starlink {
+    margin-top: 40px;
+  }
+
+  .img_servicio_1 img,
   .img_servicio_2 img {
     width: 400px;
   }
@@ -203,4 +219,381 @@
   .text_servicios p {
     font-size: 16px;
   }
+
+  .conectividad_satelital {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* BANNER - Ajustes para pantallas grandes */
+  .banner .tit_sub h1 {
+    font-size: 48px; /* Aumentamos el tamaño del título principal */
+    letter-spacing: 6px;
+  }
+
+  .banner .tit_sub p {
+    font-size: 26px; /* Aumentamos el subtítulo */
+    letter-spacing: 3px;
+  }
+
+  .prioridad_local h5,
+  .prioridad_mar h5,
+  .prioridad_movil h5 {
+    font-size: 21px; /* Aumentamos el tamaño de los títulos */
+    letter-spacing: 1px;
+  }
+
+  .prioridad_local p,
+  .prioridad_mar p,
+  .prioridad_movil p {
+    font-size: 18px; /* Aumentamos el tamaño del texto */
+    margin-top: 10px;
+  }
+
+  .prioridad_local button,
+  .prioridad_mar button,
+  .prioridad_movil button {
+    width: 90px; /* Aumentamos el tamaño del botón */
+    padding: 10px;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  .casos_uso h3 {
+    font-size: 26px;
+  }
+
+  .caso_uso_sitio_fijo img,
+  .caso_uso_maritimo img,
+  .caso_uso_terrestre img {
+    width: 279px;
+  }
+
+  .text_casos_uso h4 {
+    font-size: 22px; /* Aumentamos el título de casos de uso */
+  }
+
+  .text_casos_uso p {
+    font-size: 14px; /* Aumentamos el subtítulo */
+  }
+
+  .servicios_starlink {
+    margin-top: 120px;
+  }
+
+  .servicios_starlink h3 {
+    font-size: 32px;
+    margin-top: -60px;
+  }
+
+  .servicios_starlink p {
+    font-size: 18px;
+  }
+
+  .text_servicios h5 {
+    font-size: 22px;
+  }
+
+  .text_servicios p {
+    font-size: 14px;
+  }
+
+  .conexion_internet,
+  .conectividad_satelital {
+    margin: 0px 50px;
+  }
+
+  .conectividad_satelital {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  /* BANNER - Ajustes para pantallas grandes */
+  .banner .tit_sub h1 {
+    font-size: 36px; /* Aumentamos el tamaño del título principal */
+    letter-spacing: 4px;
+  }
+
+  .banner .tit_sub p {
+    font-size: 20px; /* Aumentamos el subtítulo */
+    letter-spacing: 3px;
+  }
+
+  /* PRIORIDADES - Mantienen posición y se adaptan al tamaño */
+  .prioridad_tipo {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+    flex-direction: column;
+    gap: 20px;
+    top: 400px;
+    max-width: 1800px;
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* Cada elemento ocupa el 48% del ancho (permite 2 por fila) */
+  .prioridad_tipo > * {
+    flex: 0 0 calc(30% - 10px);
+  }
+
+  /* El tercer elemento ocupa toda la fila */
+  .prioridad_tipo > *:nth-child(3) {
+    flex: 0 0 30%;
+  }
+
+  .prioridad_local,
+  .prioridad_mar,
+  .prioridad_movil {
+    padding: 20px 20px;
+    width: 320px; /* Aumentamos el ancho de las cajas */
+    height: 50px; /* Aumentamos la altura */
+    /* Mantienen todas las propiedades originales incluyendo animación */
+  }
+
+  .prioridad_local h5,
+  .prioridad_mar h5,
+  .prioridad_movil h5 {
+    font-size: 20px; /* Aumentamos el tamaño de los títulos */
+    letter-spacing: 1px;
+  }
+
+  .prioridad_local p,
+  .prioridad_mar p,
+  .prioridad_movil p {
+    font-size: 18px; /* Aumentamos el tamaño del texto */
+    margin-top: 10px;
+  }
+
+  .prioridad_local button,
+  .prioridad_mar button,
+  .prioridad_movil button {
+    width: 110px; /* Aumentamos el tamaño del botón */
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .casos_uso {
+    margin-top: 500px;
+    padding: 0px !important;
+    margin-left: 58px;
+  }
+
+  .text_casos_uso h4 {
+    font-size: 20px; /* Aumentamos el título de casos de uso */
+  }
+
+  .text_casos_uso p {
+    font-size: 20px; /* Aumentamos el subtítulo */
+  }
+
+  .casos_usos_tipo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .caso_uso_sitio_fijo img,
+  .caso_uso_maritimo img,
+  .caso_uso_terrestre img {
+    width: 330px;
+  }
+
+  .servicios_starlink h3 {
+    font-size: 26px;
+    text-align: center;
+    margin-top: -60px;
+  }
+
+  .servicios_starlink p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .text_servicios h5 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .text_servicios p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .img_servicio_1 img,
+  .img_servicio_2 img {
+    width: 360px;
+  }
+
+  .conexion_internet,
+  .conectividad_satelital {
+    margin: 0px 30px;
+  }
+
+  .conexion_internet {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .conectividad_satelital {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 375px) {
+  .casos_uso {
+    margin-top: 480px;
+    padding: 0px !important;
+    margin-left: 20px;
+  }
+
+  .casos_uso h3 {
+    font-size: 22px;
+  }
+
+  .text_casos_uso h4 {
+    font-size: 18px; /* Aumentamos el título de casos de uso */
+  }
+
+  .text_casos_uso p {
+    font-size: 18px; /* Aumentamos el subtítulo */
+  }
+
+  .casos_usos_tipo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .caso_uso_sitio_fijo img,
+  .caso_uso_maritimo img,
+  .caso_uso_terrestre img {
+    width: 330px;
+  }
+
+  .services {
+    margin-top: 15px;
+  }
+
+  .img_servicio_1 img,
+  .img_servicio_2 img {
+    width: 330px;
+  }
+
+  .text_servicios h5 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .text_servicios p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .conexion_internet,
+  .conectividad_satelital {
+    margin: 0px 20px;
+  }
+
+}
+
+@media (max-width: 320px) {
+  .prioridad_local,
+  .prioridad_mar,
+  .prioridad_movil {
+    padding: 15px 15px;
+    width: 280px; /* Aumentamos el ancho de las cajas */
+    height: 50px; /* Aumentamos la altura */
+    /* Mantienen todas las propiedades originales incluyendo animación */
+  }
+
+  .prioridad_local h5,
+  .prioridad_mar h5,
+  .prioridad_movil h5 {
+    font-size: 18px; /* Aumentamos el tamaño de los títulos */
+    letter-spacing: 1px;
+  }
+
+  .prioridad_local p,
+  .prioridad_mar p,
+  .prioridad_movil p {
+    font-size: 16px; /* Aumentamos el tamaño del texto */
+    margin-top: 10px;
+  }
+
+  .prioridad_local button,
+  .prioridad_mar button,
+  .prioridad_movil button {
+    width: 90px; /* Aumentamos el tamaño del botón */
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  .casos_uso {
+    margin-top: 420px;
+    padding: 0px !important;
+    margin-left: 20px;
+  }
+
+  .casos_uso h3 {
+    font-size: 20px;
+  }
+
+  .text_casos_uso h4 {
+    font-size: 16px; /* Aumentamos el título de casos de uso */
+  }
+
+  .text_casos_uso p {
+    font-size: 14px; /* Aumentamos el subtítulo */
+  }
+
+  .casos_usos_tipo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .caso_uso_sitio_fijo img,
+  .caso_uso_maritimo img,
+  .caso_uso_terrestre img {
+    width: 280px;
+  }
+
+  .services {
+    margin-top: 12px;
+  }
+
+  .img_servicio_1 img,
+  .img_servicio_2 img {
+    width: 290px;
+  }
+
+  .servicios_starlink h3 {
+    font-size: 20px;
+  }
+
+  .servicios_starlink p {
+    font-size: 14px;
+  }
+
+  .text_servicios h5 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .text_servicios p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .conexion_internet,
+  .conectividad_satelital {
+    margin: 0% 5%;
+  }
+
 }
