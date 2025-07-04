@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Galleria } from "primereact/galleria";
 import "../../style/Galeria.css";
+import "../../style/Responsive/GaleriaResponsive.css";
 
 export default function GaleriaImages({ onClose }) {
   const [images, setImages] = useState([]);
@@ -25,11 +26,15 @@ export default function GaleriaImages({ onClose }) {
     },
     {
       breakpoint: "768px",
-      numVisible: 4,
+      numVisible: 5,
     },
     {
       breakpoint: "560px",
       numVisible: 3,
+    },
+    {
+      breakpoint: "425px",
+      numVisible: 2,
     },
   ];
 

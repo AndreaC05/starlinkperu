@@ -1,0 +1,11 @@
+@media (max-width: 425px) {
+  .p-galleria-content {
+    width: 400px;
+  }
+}
+
+@media (max-width: 375px) {
+  .p-galleria-content {
+    width: 300px;
+  }
+}
