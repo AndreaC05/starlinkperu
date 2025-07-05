@@ -29,7 +29,7 @@ export default function RedesSociales() {
           </a>
         </div>
         <div className="social_icon mt-4">
-          <a href="tel:+5116408018" className="link_wrapper">
+          <a href="tel:01408018" className="link_wrapper">
             <img src={Phone} alt="Teléfono" />
             <span className="tooltip">(01) 640 8018</span>
           </a>
