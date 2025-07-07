@@ -99,6 +99,15 @@
   background-color: transparent;
 }
 
+.butons_prioridad {
+  background-color: transparent;
+}
+
+.pedir_ahora,
+.detalle_servicio_starlink{
+  background-color: transparent;
+}
+
 .prioridad_local .pedir_ahora button,
 .prioridad_mar .pedir_ahora button,
 .prioridad_movil .pedir_ahora button {
