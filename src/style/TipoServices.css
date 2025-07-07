@@ -1,24 +1,84 @@
-.container_fixed_sitio .tit_sub, 
-.container_maritime .tit_sub {
-    margin-top: 450px;
-    /* border: 1px solid black; */
+.header_buton {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: end;
 }
 
-.container_fixed_sitio .tit_sub h1,
-.container_maritime .tit_sub h1 {
-    margin-bottom: 30px;
+.header_buton Button {
+  margin-right: 30px;
+  padding: 8px;
+  border: 2px solid white;
 }
 
-.container_fixed_sitio .tit_sub a,
-.container_maritime .tit_sub a {
-    background-color: transparent;
+.cuerpo_planes_servicios {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+  color: white;
+  text-align: center;
 }
 
-.container_fixed_sitio .tit_sub Button, 
-.container_maritime .tit_sub Button {
+.cuerpo_planes_servicios h1 {
+  font-size: 55px;
+  font-weight: 700;
+}
+
+.text_services_planes {
+    border: 1px solid white;
+    border-radius: 20px;
+    margin-top: 50px;
+    padding: 30px 50px;
+}
+
+.text_services_planes h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.text_services_planes p {
+    margin-top: 25px;
+}
+
+.list_services {
+    margin-top: 40px;
+}
+
+.list_services h4 {
+    font-weight: 200; 
+    letter-spacing: 4px;
+    font-size: 30px;
+}
+
+.list_services ul {
+    margin-top: 30px;
+    list-style: none;
+}
+
+.list_services ul li {
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.cuerpo_planes_servicios .pedir_ahora {
+    margin-top: 30px;
+}
+
+.cuerpo_planes_servicios .pedir_ahora Button{
     background-color: white;
-    border: none;
     color: black;
-    padding: 8px 10px;
-    font-size: 20px;
+    border: none;
+    padding: 15px;
+    border-radius: 3px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.cuerpo_planes_servicios .pedir_ahora Button:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    box-shadow: -2px 2px 10px rgba(255, 255, 255, 0.863);
 }

@@ -25,7 +25,7 @@ export default function RedesSociales() {
             className="link_wrapper"
           >
             <img src={Gmail} alt="Gmail" />
-            <span className="tooltip">cmorales@mikrotikperu.com.pe</span>
+            <span className="tooltip">starlink.corporativo@starlink.com.pe</span>
           </a>
         </div>
         <div className="social_icon mt-4">

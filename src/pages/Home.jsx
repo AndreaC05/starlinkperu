@@ -4,6 +4,7 @@ import "../style/Responsive/HomeResponsive.css";
 import Logo from "../assets/LOGOSTARLINKPERÚ.svg";
 import Rectangle from "../assets/rectangle.svg";
 import { Button } from "primereact/button";
+import { Link } from "react-router-dom";
 import GaleriaImages from "../components/SITIOFIJOGALERIA/GaleriaImages";
 import GaleriaImages2 from "../components/MARITIMOGALERIA/GaleriaImages";
 import SitioFijo from "../assets/SITIOFIJO.jpg";
@@ -39,23 +40,32 @@ export default function Home() {
       <div className="container_principal_starlink">
         <div className="banner">
           <div className="tit_sub">
-            <h1>STARLINK EMPRESAS</h1>
-            <p>Conectando al mundo</p>
+            <h1>INTERNET SATELITAL EMPRESAS</h1>
+            <p>Internet de alta velocidad confiable para empresas</p>
           </div>
         </div>
         <section className="prioridad_tipo">
           <div className="prioridad_local">
             <h5>PRIORIDAD LOCAL</h5>
             <p>Conectividad en todo el país</p>
-            <a
-              href="https://wa.me/51999046598"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button>Pedir Ahora</Button>
-            </a>
+            <div className="butons_prioridad flex">
+              <div className="pedir_ahora">
+                <a
+                  href="https://wa.me/51999046598"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button>Pedir Ahora</Button>
+                </a>
+              </div>
+              <div className="detalle_servicio_starlink">
+                <Link to="/services-plans/local">
+                  <Button>Detalle del Servicio</Button>
+                </Link>
+              </div>
+            </div>
           </div>
-          <div className="prioridad_movil">
+          {/* <div className="prioridad_movil">
             <h5>PRIORIDAD MÓVIL</h5>
             <p>Conectividad en todo su camino</p>
             <a
@@ -65,17 +75,26 @@ export default function Home() {
             >
               <Button>Pedir Ahora</Button>
             </a>
-          </div>
+          </div> */}
           <div className="prioridad_mar">
-            <h5>PRIORIDAD MARÍTIMO</h5>
-            <p>Conectividad en el altamar</p>
-            <a
-              href="https://wa.me/51999046598"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button>Pedir Ahora</Button>
-            </a>
+            <h5>PRIORIDAD GLOBAL</h5>
+            <p>Conectividad en tierra y altamar en todo el mundo</p>
+            <div className="butons_prioridad flex">
+              <div className="pedir_ahora">
+                <a
+                  href="https://wa.me/51999046598"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button>Pedir Ahora</Button>
+                </a>
+              </div>
+              <div className="detalle_servicio_starlink">
+                <Link to="/services-plans/global">
+                  <Button>Detalle del Servicio</Button>
+                </Link>
+              </div>
+            </div>
           </div>
         </section>
         <section className="casos_uso">

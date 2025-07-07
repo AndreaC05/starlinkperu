@@ -16,8 +16,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route exact path="/" element={<Inicio />} />
-        <Route exact path="/fixed-site" element={<FixedSite />} />
-        <Route exact path="/maritime" element={<Maritime />} />
+        <Route exact path="/services-plans/local" element={<FixedSite />} />
+        <Route exact path="/services-plans/global" element={<Maritime />} />
       </Routes>
     </BrowserRouter>
   );

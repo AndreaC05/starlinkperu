@@ -28,13 +28,13 @@
 .banner .tit_sub h1 {
   background-color: transparent;
   font-size: 80px;
-  font-weight: 500;
-  letter-spacing: 5px;
+  font-weight: bold;
+  letter-spacing: 3px;
 }
 
 .banner .tit_sub p {
   background-color: transparent;
-  font-size: 40px;
+  font-size: 34px;
   letter-spacing: 2px;
 }
 
@@ -59,7 +59,7 @@
   border-color: #ffffffcc;
   border-radius: 30px;
   opacity: 0.8;
-  width: 468px;
+  width: 568px;
   height: 180px;
   display: flex;
   flex-direction: column;
@@ -99,17 +99,27 @@
   background-color: transparent;
 }
 
-.prioridad_local button,
-.prioridad_mar button,
-.prioridad_movil button {
+.prioridad_local .pedir_ahora button,
+.prioridad_mar .pedir_ahora button,
+.prioridad_movil .pedir_ahora button {
   background-color: white;
   color: black;
   border-radius: 8px;
-  width: 90px;
+  width: 100px;
   padding: 10px;
   border: none;
-  margin-top: 7px;
-  font-size: 12px;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.prioridad_local .detalle_servicio_starlink Button,
+.prioridad_mar .detalle_servicio_starlink Button {
+  border-color: white;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 14px;
   font-weight: 600;
 }
 
