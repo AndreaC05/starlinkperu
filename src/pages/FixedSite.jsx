@@ -18,7 +18,7 @@ export default function FixedSite() {
             </Link>
           </div>
           <div className="cuerpo_planes_servicios">
-            <h1>PLANES DE SERVICIO</h1>
+            <h1>CARÁCTERISTICAS DE SERVICIO</h1>
             <div className="text_services_planes">
               <h3>PRIORIDAD LOCAL</h3>
               <p>
