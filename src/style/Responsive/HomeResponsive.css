@@ -23,7 +23,7 @@
   .prioridad_local,
   .prioridad_mar,
   .prioridad_movil {
-    width: 520px; /* Aumentamos el ancho de las cajas */
+    width: 800px; /* Aumentamos el ancho de las cajas */
     height: 200px; /* Aumentamos la altura */
     padding: 55px 45px; /* Aumentamos el padding */
     /* Mantienen todas las propiedades originales incluyendo animación */
@@ -43,13 +43,28 @@
     margin-top: 10px;
   }
 
-  .prioridad_local button,
-  .prioridad_mar button,
-  .prioridad_movil button {
-    width: 110px; /* Aumentamos el tamaño del botón */
-    padding: 12px;
-    font-size: 14px;
+  .prioridad_local .pedir_ahora button,
+  .prioridad_mar .pedir_ahora button,
+  .prioridad_movil .pedir_ahora button {
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    width: 100px;
+    padding: 10px;
+    border: none;
     margin-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .prioridad_local .detalle_servicio_starlink Button,
+  .prioridad_mar .detalle_servicio_starlink Button {
+    border-color: white;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: 600;
   }
 
   /* CASOS DE USO - Ajustes para pantallas grandes */
@@ -146,7 +161,7 @@
   }
 
   .casos_uso {
-    margin-top: 400px;
+    margin-top: 250px;
     padding: 0px 70px;
   }
 
@@ -179,6 +194,44 @@
 }
 
 @media (max-width: 1024px) {
+  .prioridad_local h5,
+  .prioridad_mar h5,
+  .prioridad_movil h5 {
+    font-size: 24px; /* Aumentamos el tamaño de los títulos */
+    letter-spacing: 1.5px;
+  }
+
+  .prioridad_local p,
+  .prioridad_mar p,
+  .prioridad_movil p {
+    font-size: 18px; /* Aumentamos el tamaño del texto */
+    margin-top: 10px;
+  }
+
+  .prioridad_local .pedir_ahora button,
+  .prioridad_mar .pedir_ahora button,
+  .prioridad_movil .pedir_ahora button {
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    width: 85px;
+    padding: 8px;
+    border: none;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .prioridad_local .detalle_servicio_starlink Button,
+  .prioridad_mar .detalle_servicio_starlink Button {
+    border-color: white;
+    padding: 8px;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
   .casos_usos_tipo {
     display: flex;
     flex-wrap: wrap;
@@ -228,36 +281,56 @@
 @media (max-width: 768px) {
   /* BANNER - Ajustes para pantallas grandes */
   .banner .tit_sub h1 {
-    font-size: 48px; /* Aumentamos el tamaño del título principal */
+    font-size: 40px; /* Aumentamos el tamaño del título principal */
     letter-spacing: 6px;
   }
 
   .banner .tit_sub p {
-    font-size: 26px; /* Aumentamos el subtítulo */
+    font-size: 20px; /* Aumentamos el subtítulo */
     letter-spacing: 3px;
   }
 
   .prioridad_local h5,
   .prioridad_mar h5,
   .prioridad_movil h5 {
-    font-size: 21px; /* Aumentamos el tamaño de los títulos */
+    font-size: 18px; /* Aumentamos el tamaño de los títulos */
     letter-spacing: 1px;
   }
 
   .prioridad_local p,
   .prioridad_mar p,
   .prioridad_movil p {
-    font-size: 18px; /* Aumentamos el tamaño del texto */
+    font-size: 14px; /* Aumentamos el tamaño del texto */
     margin-top: 10px;
   }
 
-  .prioridad_local button,
-  .prioridad_mar button,
-  .prioridad_movil button {
-    width: 90px; /* Aumentamos el tamaño del botón */
-    padding: 10px;
-    font-size: 12px;
+  .prioridad_local .pedir_ahora button,
+  .prioridad_mar .pedir_ahora button,
+  .prioridad_movil .pedir_ahora button {
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    width: 80px;
+    padding: 6px;
+    border: none;
     margin-top: 10px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .prioridad_local .detalle_servicio_starlink Button,
+  .prioridad_mar .detalle_servicio_starlink Button {
+    border-color: white;
+    width: 130px;
+    padding: 6px;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .casos_uso {
+    margin-top: 200px;
   }
 
   .casos_uso h3 {
@@ -376,7 +449,7 @@
   }
 
   .casos_uso {
-    margin-top: 500px;
+    margin-top: 300px;
     padding: 0px !important;
     margin-left: 58px;
   }
@@ -449,7 +522,7 @@
 
 @media (max-width: 375px) {
   .casos_uso {
-    margin-top: 480px;
+    margin-top: 350px;
     padding: 0px !important;
     margin-left: 20px;
   }
@@ -477,6 +550,10 @@
     width: 330px;
   }
 
+  .caso_uso_terrestre .text_casos_uso p {
+    font-size: 16px;
+  }
+
   .services {
     margin-top: 15px;
   }
@@ -500,10 +577,20 @@
   .conectividad_satelital {
     margin: 0px 20px;
   }
-
 }
 
 @media (max-width: 320px) {
+  /* BANNER - Ajustes para pantallas grandes */
+  .banner .tit_sub h1 {
+    font-size: 28px; /* Aumentamos el tamaño del título principal */
+    letter-spacing: 4px;
+  }
+
+  .banner .tit_sub p {
+    font-size: 16px; /* Aumentamos el subtítulo */
+    letter-spacing: 3px;
+  }
+
   .prioridad_local,
   .prioridad_mar,
   .prioridad_movil {
@@ -536,7 +623,7 @@
   }
 
   .casos_uso {
-    margin-top: 420px;
+    margin-top: 300px;
     padding: 0px !important;
     margin-left: 20px;
   }
@@ -562,6 +649,10 @@
   .caso_uso_maritimo img,
   .caso_uso_terrestre img {
     width: 280px;
+  }
+
+  .caso_uso_terrestre .text_casos_uso p {
+    font-size: 14px;
   }
 
   .services {
@@ -595,5 +686,4 @@
   .conectividad_satelital {
     margin: 0% 5%;
   }
-
 }

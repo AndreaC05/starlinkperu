@@ -3,6 +3,13 @@
     position: relative;
 }
 
+.container_fixed_sitio img,
+.container_maritime img {
+    width: 100%;
+    height: 80vh;
+    margin-top: 60px;
+}
+
 .container_infor_services_plans {
     position: absolute;
     top: 0;
@@ -87,6 +94,7 @@
 
 .cuerpo_planes_servicios .pedir_ahora {
     margin-top: 30px;
+    margin-bottom: 40px;
     background-color: transparent;
 }
 
