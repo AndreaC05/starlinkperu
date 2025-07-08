@@ -13,7 +13,7 @@
 
   /* PRIORIDADES - Mantienen posición y se adaptan al tamaño */
   .prioridad_tipo {
-    top: 600px; /* Ajustamos la posición para pantallas más grandes */
+    top: 450px; /* Ajustamos la posición para pantallas más grandes */
     max-width: 1800px; /* Limitamos el ancho máximo */
     margin: 0 auto;
     left: 50%;
@@ -143,7 +143,7 @@
     display: flex;
     flex-wrap: wrap; /* Permite que los elementos se envuelvan */
     gap: 20px;
-    top: 400px;
+    top: 320px;
     max-width: 1800px;
     margin: 0 auto;
     left: 50%;
@@ -400,7 +400,7 @@
     flex-wrap: wrap; /* Permite que los elementos se envuelvan */
     flex-direction: column;
     gap: 20px;
-    top: 400px;
+    top: 300px;
     max-width: 1800px;
     margin: 0 auto;
     left: 50%;
@@ -522,7 +522,7 @@
 
 @media (max-width: 375px) {
   .casos_uso {
-    margin-top: 350px;
+    margin-top: 320px;
     padding: 0px !important;
     margin-left: 20px;
   }
@@ -623,7 +623,7 @@
   }
 
   .casos_uso {
-    margin-top: 300px;
+    margin-top: 250px;
     padding: 0px !important;
     margin-left: 20px;
   }

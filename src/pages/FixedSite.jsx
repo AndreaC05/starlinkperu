@@ -1,7 +1,5 @@
 import "../style/TipoServices.css";
 import "../style/Responsive/TipoServicesResponsive.css";
-import Logo from "../assets/LOGOSTARLINKPERÚ.svg";
-import Rectangle from "../assets/rectangle.svg";
 import { Button } from "primereact/button";
 import { Link } from "react-router-dom";
 import Fondo from "../assets/Fondo/fondoPuntos.svg";

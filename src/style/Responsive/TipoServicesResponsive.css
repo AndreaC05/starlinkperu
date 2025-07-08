@@ -13,13 +13,14 @@
 }
 
 @media (max-width: 768px) {
+
   .container_fixed_sitio img,
   .container_maritime img {
     margin-top: 150px;
   }
 
   .cuerpo_planes_servicios h1 {
-    font-size: 50px;
+    font-size: 42px;
     font-weight: 600;
   }
 
@@ -44,7 +45,7 @@
 
 @media (max-width: 425px) {
   .cuerpo_planes_servicios h1 {
-    font-size: 36px;
+    font-size: 32px;
   }
   .list_services h4 {
     letter-spacing: 1px;
