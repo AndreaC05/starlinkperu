@@ -188,6 +188,8 @@
 .caso_uso_sitio_fijo img,
 .caso_uso_maritimo img,
 .caso_uso_terrestre img {
+  width: 510px;
+  height: 394px;
   transition: transform 0.5s ease;
 }
 
