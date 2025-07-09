@@ -13,7 +13,7 @@
 
   /* PRIORIDADES - Mantienen posición y se adaptan al tamaño */
   .prioridad_tipo {
-    top: 450px; /* Ajustamos la posición para pantallas más grandes */
+    top: 590px; /* Ajustamos la posición para pantallas más grandes */
     max-width: 1800px; /* Limitamos el ancho máximo */
     margin: 0 auto;
     left: 50%;
@@ -76,7 +76,7 @@
   .caso_uso_sitio_fijo img,
   .caso_uso_maritimo img,
   .caso_uso_terrestre img {
-    width: 730px;
+    /* width: 730px; */
   }
 
   .casos_uso h3 {
@@ -84,11 +84,11 @@
   }
 
   .text_casos_uso h4 {
-    font-size: 48px; /* Aumentamos el título de casos de uso */
+    font-size: 44px; /* Aumentamos el título de casos de uso */
   }
 
   .text_casos_uso p {
-    font-size: 28px; /* Aumentamos el subtítulo */
+    font-size: 26px; /* Aumentamos el subtítulo */
   }
 
   /* SERVICIOS - Ajustes para pantallas grandes */
@@ -143,7 +143,7 @@
     display: flex;
     flex-wrap: wrap; /* Permite que los elementos se envuelvan */
     gap: 20px;
-    top: 320px;
+    top: 600px;
     max-width: 1800px;
     margin: 0 auto;
     left: 50%;
@@ -236,12 +236,6 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-  }
-
-  .caso_uso_sitio_fijo img,
-  .caso_uso_maritimo img,
-  .caso_uso_terrestre img {
-    width: 420px;
   }
 
   .text_casos_uso {
@@ -337,12 +331,6 @@
     font-size: 26px;
   }
 
-  .caso_uso_sitio_fijo img,
-  .caso_uso_maritimo img,
-  .caso_uso_terrestre img {
-    width: 279px;
-  }
-
   .text_casos_uso h4 {
     font-size: 22px; /* Aumentamos el título de casos de uso */
   }
@@ -400,7 +388,7 @@
     flex-wrap: wrap; /* Permite que los elementos se envuelvan */
     flex-direction: column;
     gap: 20px;
-    top: 300px;
+    top: 520px;
     max-width: 1800px;
     margin: 0 auto;
     left: 50%;
@@ -471,6 +459,7 @@
   .caso_uso_maritimo img,
   .caso_uso_terrestre img {
     width: 330px;
+    height: 300px;
   }
 
   .servicios_starlink h3 {
@@ -522,7 +511,7 @@
 
 @media (max-width: 375px) {
   .casos_uso {
-    margin-top: 320px;
+    margin-top: 250px;
     padding: 0px !important;
     margin-left: 20px;
   }
