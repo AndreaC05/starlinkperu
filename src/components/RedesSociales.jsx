@@ -21,7 +21,7 @@ export default function RedesSociales() {
         </div>
         <div className="social_icon mt-4">
           <a
-            href="mailto:cmorales@mikrotikperu.com.pe"
+            href="mailto:starlink.corporativo@starlink.com.pe"
             className="link_wrapper"
           >
             <img src={Gmail} alt="Gmail" />
