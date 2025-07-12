@@ -9,10 +9,10 @@ export default function GaleriaImages({ onClose }) {
 
   // Aquí defines tus URLs de imágenes
   const imageUrls = [
-    "https://res.cloudinary.com/dnao6nouz/image/upload/v1751571182/Mesa_de_trabajo_3_1_dp7xbz.jpg",
+    "https://res.cloudinary.com/dnao6nouz/image/upload/v1752335339/proyecto_tres_irvym8.jpg",
     "https://res.cloudinary.com/dnao6nouz/image/upload/v1751571155/Mesa_de_trabajo_2_1_lyziko.jpg",
     "https://res.cloudinary.com/dnao6nouz/image/upload/v1751571123/Mesa_de_trabajo_1_mjlwmi.jpg",
-    "https://res.cloudinary.com/dnao6nouz/image/upload/v1751571030/Mesa_de_trabajo_4_1_xkpdes.jpg",
+    "https://res.cloudinary.com/dnao6nouz/image/upload/v1752335345/proyecto_cuatro_jdnas9.jpg",
   ];
 
   const responsiveOptions = [
