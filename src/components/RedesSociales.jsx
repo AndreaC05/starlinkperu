@@ -24,6 +24,7 @@ export default function RedesSociales() {
           <a
             href="https://www.tiktok.com/@mikrotikperu?is_from_webapp=1&sender_device=pc"
             className="link_wrapper"
+            target="_blank"
           >
             <img src={TikTok} alt="Tiktok" />
             <span className="tooltip">@mikrotikperu</span>
