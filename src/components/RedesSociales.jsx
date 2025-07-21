@@ -3,6 +3,7 @@ import "../style/Responsive/RedesSocialesResponsive.css";
 import Whatsapp from "../assets/Icons/whatsapp.svg";
 import Gmail from "../assets/Icons/email.svg";
 import Phone from "../assets/Icons/phone.svg";
+import TikTok from "../assets/Icons/tiktok.svg";
 
 export default function RedesSociales() {
   return (
@@ -17,6 +18,15 @@ export default function RedesSociales() {
           >
             <img src={Whatsapp} alt="WhatsApp" />
             <span className="tooltip">+51 999 046 598</span>
+          </a>
+        </div>
+        <div className="social_icon mt-4">
+          <a
+            href="https://www.tiktok.com/@mikrotikperu?is_from_webapp=1&sender_device=pc"
+            className="link_wrapper"
+          >
+            <img src={TikTok} alt="Tiktok" />
+            <span className="tooltip">@mikrotikperu</span>
           </a>
         </div>
         <div className="social_icon mt-4">
