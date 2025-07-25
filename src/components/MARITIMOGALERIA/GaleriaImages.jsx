@@ -8,8 +8,7 @@ export default function GaleriaImages({ onClose }) {
 
   // Aquí defines tus URLs de imágenes
   const imageUrls = [
-    "https://res.cloudinary.com/dnao6nouz/image/upload/v1752335194/proyecto_dos_lnjyva.jpg",
-    "https://res.cloudinary.com/dnao6nouz/image/upload/v1752335194/proyecto_uno_ndbaem.jpg"
+    "https://res.cloudinary.com/dnao6nouz/image/upload/v1753459939/proyecto5_hile9r.jpg"
   ];
 
   const responsiveOptions = [
