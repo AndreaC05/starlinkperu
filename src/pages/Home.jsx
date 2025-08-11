@@ -134,7 +134,7 @@ export default function Home() {
           </div>
         </section>
         <section className="servicios_starlink">
-          <h3>Conectividad sin límites con Starlink</h3>
+          <h3>Conectividad sin límites con Tecnología LEO</h3>
           <p>
             Internet satelital de alta velocidad, en cualquier lugar del país
           </p>
