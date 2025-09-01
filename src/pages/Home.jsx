@@ -143,7 +143,7 @@ export default function Home() {
               <div className="text_servicios">
                 <h5>CONEXIÓN A INTERNET</h5>
                 <p>
-                  El kit Starlink viene con todo lo que necesita para conectarse
+                  El kit viene con todo lo que necesita para conectarse
                   en cuestión de minutos. Lo único que necesita es un cielo
                   despejado.
                 </p>
@@ -163,7 +163,7 @@ export default function Home() {
                 </h5>
                 <p>
                   Internet de alta velocidad y baja latencia en altamar con
-                  Starlink para empresas.
+                  Tecnología LEO para empresas.
                 </p>
               </div>
             </div>
