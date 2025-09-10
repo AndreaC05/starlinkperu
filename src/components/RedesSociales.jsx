@@ -11,13 +11,13 @@ export default function RedesSociales() {
       <div className="redes">
         <div className="social_icon">
           <a
-            href="https://wa.me/51955517400"
+            href="https://wa.me/51999046598"
             target="_blank"
             rel="noopener noreferrer"
             className="link_wrapper"
           >
             <img src={Whatsapp} alt="WhatsApp" />
-            <span className="tooltip">+51 955 517 400</span>
+            <span className="tooltip">+51 999 046 598</span>
           </a>
         </div>
         <div className="social_icon mt-4">
@@ -40,9 +40,9 @@ export default function RedesSociales() {
           </a>
         </div>
         <div className="social_icon mt-4">
-          <a href="tel:016408018" className="link_wrapper">
+          <a href="tel:013211114" className="link_wrapper">
             <img src={Phone} alt="Teléfono" />
-            <span className="tooltip">(01) 640 8018</span>
+            <span className="tooltip">(01) 321 1114</span>
           </a>
         </div>
       </div>
