@@ -17,7 +17,7 @@ export default function RedesSociales() {
             className="link_wrapper"
           >
             <img src={Whatsapp} alt="WhatsApp" />
-            <span className="tooltip">+51 999 046 598</span>
+            <span className="tooltip">+51 955 517 400</span>
           </a>
         </div>
         <div className="social_icon mt-4">
